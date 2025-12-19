@@ -15,8 +15,8 @@ type Item struct {
 var inventory []Item // slice to hold items
 
 func main() {
+	fmt.Println("--- SHOP INVENTORY SYSTEM ---")
 	for {
-		fmt.Println("\n--- SHOP INVENTORY SYSTEM ---")
 		fmt.Println("1. Add Item")
 		fmt.Println("2. Display Items")
 		fmt.Println("3. Search Item")
@@ -37,7 +37,7 @@ func main() {
 		case 4:
 			updateQuantity()
 		case 5:
-			fmt.Println("Exiting... Thank you!")
+			fmt.Println("Exiting...\n Thank you!")
 			return
 		default:
 			fmt.Println("Invalid choice. Try again.")
